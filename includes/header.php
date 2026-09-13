@@ -7,7 +7,7 @@ $canonical=$canonical??site_url($currentPage);
 <!doctype html><html lang="ar" dir="rtl"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0C1319">
 <title><?=e($pageTitle??config('site_name'))?></title><meta name="description" content="<?=e($metaDescription)?>"><link rel="canonical" href="<?=e($canonical)?>">
-<link rel="stylesheet" href="assets/style.css"></head><body>
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/storefront-v3.css"></head><body>
 <div class="topbar"><div class="topbar-main"><span>توريدات صناعية للشركات والمصانع</span><span class="top-sep"></span><a href="contact.php">دعم المبيعات</a></div><div class="topbar-meta"><a href="contact.php">اتصل بنا</a><span>العربية</span></div></div>
 <header class="site-head">
 <a class="brand" href="index.php" aria-label="أبشر"><span class="brand-emblem">A</span><span><strong>أبشر</strong><small>للتوريدات والمعدات</small><em>ABSHAR INDUSTRIAL SUPPLY</em></span></a>
