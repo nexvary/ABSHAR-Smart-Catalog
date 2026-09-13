@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  lint:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,3 +23,15 @@ jobs:
               with open(f,encoding='utf-8') as h: json.load(h)
               print('OK',f)
           PY
+      - name: Bootstrap smoke checks
+        run: |
+          php -r "require 'includes/bootstrap.php'; echo 'products='.count(products()).PHP_EOL; echo 'categories='.count(categories()).PHP_EOL; echo 'brands='.count(brands()).PHP_EOL; echo 'quality='.dashboard_stats()['quality'].PHP_EOL;"
+      - name: Required files
+        run: |
+          test -f admin/index.php
+          test -f admin/products.php
+          test -f admin/quotes.php
+          test -f admin/quality.php
+          test -f assets/admin-v7.css
+          test -f assets/product-v6.css
+          test -f assets/catalog-v5.css
