@@ -26,6 +26,8 @@ jobs:
       - name: Bootstrap smoke checks
         run: |
           php -r "require 'includes/bootstrap.php'; echo 'products='.count(products()).PHP_EOL; echo 'categories='.count(categories()).PHP_EOL; echo 'brands='.count(brands()).PHP_EOL; echo 'quality='.dashboard_stats()['quality'].PHP_EOL;"
+      - name: Regression smoke suite
+        run: php tests/core-smoke.php
       - name: Required files
         run: |
           test -f admin/index.php
