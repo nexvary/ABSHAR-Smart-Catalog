@@ -1,0 +1,22 @@
+[
+  {
+    "id":"p_demo_hilti_te70",
+    "slug":"hilti-te-70-atc-avr",
+    "name":"Hilti TE 70-ATC/AVR",
+    "brand":"Hilti",
+    "model":"TE 70-ATC/AVR",
+    "category":"عدد وأدوات كهربائية ويدوية",
+    "price":0,
+    "price_label":"اتصل لمعرفة السعر",
+    "availability":"متوفر حسب الطلب",
+    "status":"published",
+    "image":"",
+    "short_description":"مطرقة دورانية SDS Max احترافية للأعمال الثقيلة مزودة بنظام التحكم النشط في عزم الدوران ATC وتقليل الاهتزاز AVR.",
+    "description":"معدة احترافية للحفر المطرقي والتكسير في الخرسانة والأعمال الشاقة. جرى إدراج البيانات الفنية التجريبية من مصادر Hilti الرسمية، مع إبقاء السعر قابلًا للتعديل من لوحة الإدارة.",
+    "specs":{"القدرة الاسمية":"1800 W","نوع الظرف":"TE-Y (SDS-max)","طاقة الطرق المفردة":"11.5 J","السرعة بدون حمل":"360 rpm","معدل الطرق":"2760 طرقة/دقيقة","الوزن وفق EPTA":"9.5 kg","الأنظمة":"ATC + AVR"},
+    "keywords":["hilti","te70","te 70","هيلتي 70","atc","avr","sds max"],
+    "source_url":"https://www.hilti.com/c/CLS_POWER_TOOLS_7125/CLS_ROTARY_HAMMERS_7125/r6851673",
+    "source_name":"Hilti Official",
+    "confidence":98
+  }
+]
