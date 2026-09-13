@@ -1,0 +1,1 @@
+document.querySelectorAll('input[name="q"]').forEach(input=>input.addEventListener('keydown',e=>{if(e.key==='Escape')input.value=''}));
