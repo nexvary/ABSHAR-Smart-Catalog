@@ -4,6 +4,12 @@ require 'includes/header.php';
 $pub=array_values(array_filter(array_reverse(products()),fn($p)=>($p['status']??'')==='published'));
 $brandNames=['BOSCH','Makita','HILTI','DEWALT','Milwaukee','STANLEY','metabo','LINCOLN ELECTRIC'];
 $catIcons=['⚙','⌁','▣','⚒','◫','⌬','◈','⬡'];
+$openMedia=[
+ 'hilti te 70-atc/avr'=>'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hilti_TE70ATC_Schlagbohrmaschine_Netzanschluss.jpg/960px-Hilti_TE70ATC_Schlagbohrmaschine_Netzanschluss.jpg',
+ 'bosch gbh 2-26 dre'=>'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bosch_GBH2-26_professional_Rotary_Hammer_Drill_PICT4578.jpg/960px-Bosch_GBH2-26_professional_Rotary_Hammer_Drill_PICT4578.jpg',
+ 'makita ga9020'=>'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Makita_GA9050_Angle_Grinder_%284887123891%29.jpg/960px-Makita_GA9050_Angle_Grinder_%284887123891%29.jpg',
+ 'dewalt dcd796'=>'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/DeWalt_20_Volt_Max_Cordless_Drill.jpg/960px-DeWalt_20_Volt_Max_Cordless_Drill.jpg'
+];
 $items=$pub?:[
 ['slug'=>'','name'=>'Hilti TE 70-ATC/AVR','brand'=>'Hilti','category'=>'عدد كهربائية','short_description'=>'مطرقة دورانية احترافية SDS Max للأعمال الشاقة.','price'=>0,'price_label'=>'اطلب السعر','image'=>''],
 ['slug'=>'','name'=>'Bosch GBH 2-26 DRE','brand'=>'Bosch','category'=>'عدد كهربائية','short_description'=>'معدة حفر وتكسير احترافية للاستخدام اليومي.','price'=>0,'price_label'=>'اطلب السعر','image'=>''],
@@ -39,7 +45,7 @@ $items=$pub?:[
 </section>
 <section class="section-block">
   <div class="section-head"><div><h2>منتجات مختارة</h2><p>معدات متاحة للاستعلام وطلب عرض السعر</p></div><a href="catalog.php">عرض الكتالوج ←</a></div>
-  <div class="product-grid"><?php foreach(array_slice($items,0,8) as$p):$href=!empty($p['slug'])?'product.php?slug='.urlencode($p['slug']):'catalog.php?q='.urlencode($p['name']);?><a class="product-card" href="<?=$href?>"><div class="product-media"><?php if(!empty($p['image'])):?><img src="<?=e($p['image'])?>" alt="<?=e($p['name'])?>"><?php else:?><div class="product-placeholder"><?=e(u_first($p['brand']??'A'))?></div><?php endif;?></div><div class="product-body"><span class="product-meta"><?=e($p['brand']??'')?> · <?=e($p['category']??'')?></span><h3><?=e($p['name'])?></h3><p><?=e($p['short_description']??'معدات صناعية احترافية متاحة للاستعلام.')?></p><div class="product-foot"><strong><?=!empty($p['price'])?money($p['price']):e($p['price_label']??'اطلب السعر')?></strong><span>التفاصيل ←</span></div></div></a><?php endforeach;?></div>
+  <div class="product-grid"><?php foreach(array_slice($items,0,8) as$p):$href=!empty($p['slug'])?'product.php?slug='.urlencode($p['slug']):'catalog.php?q='.urlencode($p['name']);$key=u_lower(trim((string)($p['name']??'')));$media=!empty($p['image'])?$p['image']:($openMedia[$key]??'');$isReference=empty($p['image'])&&$media!=='';?><a class="product-card" href="<?=$href?>"><div class="product-media"><?php if($media):?><img src="<?=e($media)?>" alt="<?=e($p['name'])?>" loading="lazy"><?php if($isReference):?><span class="media-note">صورة مرجعية مفتوحة</span><?php endif;?><?php else:?><div class="product-placeholder"><?=e(u_first($p['brand']??'A'))?></div><?php endif;?></div><div class="product-body"><span class="product-meta"><?=e($p['brand']??'')?> · <?=e($p['category']??'')?></span><h3><?=e($p['name'])?></h3><p><?=e($p['short_description']??'معدات صناعية احترافية متاحة للاستعلام.')?></p><div class="product-foot"><strong><?=!empty($p['price'])?money($p['price']):e($p['price_label']??'اطلب السعر')?></strong><span>التفاصيل ←</span></div></div></a><?php endforeach;?></div>
 </section>
 <section class="section-block" id="industries">
   <div class="business-banner"><div><h2>مشتريات الشركات والمشروعات</h2><p>أرسل قائمة الموديلات أو أرقام القطع وسنرتبها في طلب توريد واحد مع مراجعة البدائل والمصادر المتاحة.</p><div class="business-points"><span>مطابقة الموديلات</span><span>مراجعة البدائل</span><span>تجميع RFQ واحد</span><span>متابعة المبيعات</span></div></div><div class="business-cta"><a href="quote.php">ابدأ طلب التوريد</a></div></div>
