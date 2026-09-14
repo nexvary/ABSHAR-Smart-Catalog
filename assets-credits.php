@@ -1,0 +1,10 @@
+<?php $pageTitle='مصادر الصور المفتوحة | أبشر'; require 'includes/header.php'; ?>
+<section class="page-hero"><h1>مصادر الصور المفتوحة</h1><p>الصور التالية مستخدمة كصور مرجعية أو توضيحية في الكتالوج، مع الحفاظ على نسب العمل للمؤلفين والتراخيص.</p></section>
+<section class="section"><div style="display:grid;gap:14px">
+<article style="background:#fff;border:1px solid #d9dee2;padding:18px"><h3>Hilti TE70ATC</h3><p>المؤلف: Leo Miregalitheo — Wikimedia Commons — CC BY-SA 4.0.</p><a href="https://commons.wikimedia.org/wiki/File:Hilti_TE70ATC_Schlagbohrmaschine_Netzanschluss.jpg" target="_blank" rel="noopener">المصدر والترخيص</a></article>
+<article style="background:#fff;border:1px solid #d9dee2;padding:18px"><h3>Bosch GBH2-26 Professional</h3><p>المؤلف: CBX — Wikimedia Commons — CC BY-SA 3.0 / تراخيص متوافقة مدرجة في المصدر.</p><a href="https://commons.wikimedia.org/wiki/File:Bosch_GBH2-26_professional_Rotary_Hammer_Drill_PICT4578.jpg" target="_blank" rel="noopener">المصدر والترخيص</a></article>
+<article style="background:#fff;border:1px solid #d9dee2;padding:18px"><h3>Makita GA9050 Angle Grinder</h3><p>المؤلف: Mark Hunter / toolstop — Wikimedia Commons — CC BY 2.0.</p><a href="https://commons.wikimedia.org/wiki/File:Makita_GA9050_Angle_Grinder_(4887123891).jpg" target="_blank" rel="noopener">المصدر والترخيص</a></article>
+<article style="background:#fff;border:1px solid #d9dee2;padding:18px"><h3>DeWalt 20 Volt Max Cordless Drill</h3><p>المؤلف: TaurusEmerald — Wikimedia Commons — CC BY-SA 4.0.</p><a href="https://commons.wikimedia.org/wiki/File:DeWalt_20_Volt_Max_Cordless_Drill.jpg" target="_blank" rel="noopener">المصدر والترخيص</a></article>
+<article style="background:#fff;border:1px solid #d9dee2;padding:18px"><h3>Tools in the workshop</h3><p>المؤلف: Shixart1985 — Wikimedia Commons — CC BY 2.0. مخصص للاستخدام كصورة ورشة/خلفية تجارية عند الحاجة.</p><a href="https://commons.wikimedia.org/wiki/File:Tools_in_the_workshop.jpg" target="_blank" rel="noopener">المصدر والترخيص</a></article>
+</div></section>
+<?php require 'includes/footer.php'; ?>
