@@ -8,7 +8,7 @@ $canonical=$canonical??site_url($currentPage);
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#05080A">
 <title><?=e($pageTitle??config('site_name'))?></title><meta name="description" content="<?=e($metaDescription)?>"><link rel="canonical" href="<?=e($canonical)?>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/storefront-v3.css"><link rel="stylesheet" href="assets/storefront-v4.css"><link rel="stylesheet" href="assets/catalog-v5.css"><link rel="stylesheet" href="assets/product-v6.css"></head><body>
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/storefront-v3.css"><link rel="stylesheet" href="assets/storefront-v4.css"><link rel="stylesheet" href="assets/catalog-v5.css"><link rel="stylesheet" href="assets/product-v6.css"><link rel="stylesheet" href="assets/storefront-v8-commercial.css"></head><body>
 <div class="topbar"><div class="topbar-main"><span>توريدات صناعية للشركات والمصانع</span><span class="top-sep"></span><a href="services.php">حلول المشتريات B2B</a></div><div class="topbar-meta"><a href="contact.php">دعم المبيعات</a><span>العربية</span></div></div>
 <header class="site-head">
 <a class="brand" href="index.php" aria-label="أبشر"><span class="brand-emblem">A</span><span><strong>أبشر</strong><small>للتوريدات والمعدات</small><em>ABSHAR INDUSTRIAL SUPPLY</em></span></a>
